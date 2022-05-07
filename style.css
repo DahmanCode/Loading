@@ -45,13 +45,10 @@ svg circle {
     }
     50%{
         stroke-dashoffset: 0; 
-        stroke: #505fe6; 
     } 
     50.1%{
         stroke-dashoffset: 880; 
         
     }
-    75%{
-        stroke: rgb(255, 58, 23); 
-    }
+  
 }
