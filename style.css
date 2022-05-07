@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #b3b3b3;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+svg circle {
+    width: 30%;
+    height: 30%;
+    fill: none;
+    stroke: #505fe6;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transform: translate(5px,5px);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%,100%{
+        stroke-dashoffset: 440;
+        stroke: rgb(0, 255, 136);  
+    }
+    50%{
+        stroke-dashoffset: 0; 
+        stroke: #505fe6; 
+    } 
+    50.1%{
+        stroke-dashoffset: 880; 
+        
+    }
+    75%{
+        stroke: rgb(255, 58, 23); 
+    }
+}
